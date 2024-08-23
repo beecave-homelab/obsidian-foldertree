@@ -42,13 +42,14 @@ The script can be used to create markdown files that list all `.md` files in eac
 - `-d, --directory DIRECTORY`: Specify the directory to process (default: current working directory).
 - `-o, --output OUTPUT_FILE`: Specify the output file path (default: derived from directory name and placed in the directory).
 - `-v, --verbose`: Print the output content instead of saving it to a file.
+- `-b, --bypass-confirm`: Bypass the confirmation step before saving the file.
 - `-h, --help`: Show the help message with usage instructions.
 
 ## Examples
 
 ### Generate Markdown Files
 
-To generate markdown files in the specified directory:
+To generate markdown files in the specified directory and confirm before saving:
 
 ```bash
 ./obsidian-foldertree.sh -d '/path/to/your/obsidian/vault'
@@ -64,10 +65,10 @@ To print the content that would be written to the markdown files instead of savi
 
 ### Specify Output File
 
-To specify a custom output file:
+To specify a custom output file and bypass the confirmation step:
 
 ```bash
-./obsidian-foldertree.sh -d '/path/to/your/obsidian/vault' -o '/path/to/output.md'
+./obsidian-foldertree.sh -d '/path/to/your/obsidian/vault' -o '/path/to/output.md' -b
 ```
 
 ## License
